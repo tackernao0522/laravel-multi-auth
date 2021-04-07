@@ -42,6 +42,12 @@ return [
             'provider' => 'users',
         ],
 
+        // Admin用の認証を追加
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
