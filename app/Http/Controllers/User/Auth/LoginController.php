@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers\User\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
@@ -43,7 +43,7 @@ class LoginController extends Controller
     // Guardの認証方法を指定
     protected function guard()
     {
-        return Auth::guard('use');
+        return Auth::guard('user');
     }
 
     // ログイン画面
